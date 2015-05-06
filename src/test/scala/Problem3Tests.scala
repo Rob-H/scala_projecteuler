@@ -10,12 +10,12 @@ class Problem3Spec extends FlatSpec with Matchers {
         LargestPrimeFactor.of(50) should equal (5)  
     }
 
-    "factors" should "return [4, 2, 1] for 4" in {
-        LargestPrimeFactor.factors(4).toList should equal (List(4, 2, 1)) 
+    "factors" should "return [1, 2, 4] for 4" in {
+        LargestPrimeFactor.factors(4).toSet should equal (Set(1, 2, 4)) 
     }
 
-    "factors" should "return [20, 10, 5, 4, 2, 1] for 20" in {
-        LargestPrimeFactor.factors(20).toList should equal (List(20, 10, 5, 4, 2, 1)) 
+    "factors" should "return [1, 2, 4, 5, 10, 20] for 20" in {
+        LargestPrimeFactor.factors(20).toSet should equal (Set(1, 2, 4, 5, 10, 20)) 
     }
 
     "isPrime" should "return true for 5" in {
