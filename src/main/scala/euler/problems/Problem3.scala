@@ -1,4 +1,4 @@
-package problem3
+package euler.problems
 
 object LargestPrimeFactor {
     def isPrime(number: Long) = (2L to math.sqrt(number).toLong).forall(number % _ != 0)

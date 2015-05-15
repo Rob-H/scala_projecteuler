@@ -1,4 +1,4 @@
-package problem4
+package euler.problems
 
 object LargestPalindromeProduct {
     def isPalindrome(x: Int) = x.toString.reverse == x.toString

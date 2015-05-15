@@ -1,4 +1,4 @@
-package problem2
+package euler.problems
 
 object Fibonacci {
     val sequence: Stream[Int] = 1 #:: 2 #:: sequence.zip(sequence.tail).map(x => x._1 + x._2)

@@ -1,4 +1,4 @@
-import problem2._
+import euler.problems._
 import org.scalatest._
 
 class Problem2Spec extends FlatSpec with Matchers {
